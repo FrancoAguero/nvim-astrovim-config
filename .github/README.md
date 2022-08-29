@@ -43,16 +43,29 @@
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim folder
+#### Make a backup of your current nvim folder Linux
 
 ```
 mv ~/.config/nvim ~/.config/nvimbackup
 ```
 
-#### Clone the repository
+#### Make a backup of your current nvim folder Window
+
+```
+mv $HOME\AppData\Local\nvim $HOME\AppData\Local\nvim.bak 
+```
+
+#### Clone the repository Linux
 
 ```
 git clone https://github.com/FrancoAguero/nvim-astrovim-config ~/.config/nvim
+nvim +PackerSync
+```
+
+#### Clone the repository Window
+
+```
+git clone https://github.com/FrancoAguero/nvim-astrovim-config $HOME\AppData\Local\nvim
 nvim +PackerSync
 ```
 

@@ -5,6 +5,7 @@ local config  = {
             ["<leader>sp"] = { "<cmd>sp<cr>", desc = "vertical split" },
             ["<leader>,"] = { "$a,<esc>", desc = "agregar coma al final" },
             ["<leader>;"] = { "$a;<esc>", desc = "agregar punto y coma al final" },
+            ["<leader>fp"] = { function() require("hop").hint_patterns() end, desc = "saltar a un patter en especifico" }
         },
     },
     plugins = {

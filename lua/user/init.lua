@@ -7,6 +7,24 @@ local config  = {
             ["<leader>;"] = { "$a;<esc>", desc = "agregar punto y coma al final" },
         },
     },
+    plugins = {
+        init = {
+            {
+                "ur4ltz/surround.nvim",
+                config = function()
+                    require("surround").setup {mappings_style = "surround"}
+                end
+            },
+            {
+                'phaazon/hop.nvim',
+                branch = 'v2', -- optional but strongly recommended
+                config = function()
+                    -- you can configure Hop the way you like here; see :h hop-config
+                    require("hop").setup { keys = 'etovxqpdygfblzhckisuran' }
+                end
+            }
+        },
+    }
 }
 
 return config
